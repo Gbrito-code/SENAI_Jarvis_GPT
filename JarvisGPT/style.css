@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Inter', 'sans-serif';
-    transition: background-color 0.5s ease-in-out;
+body{
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.5s;
 }
 
-main {
+main{
     display: flex;
     width: 100vw;
     height: 100vh;
 }
 
-.sidebar {
+.sidebar{
     width: 60px;
     background-color: #dd203c;
 }
 
-.chat {
-    width: 100%;
+.chat{
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -31,28 +31,28 @@ main {
     justify-content: center;
 }
 
-h1 {
+h1{
     font-size: 96px;
     font-weight: bold;
     margin: 40px 0;
 }
 
-.pergunta {
+.pergunta{
     display: flex;
     margin: 15vh 0;
-
 }
 
-input {
+input{
     width: 800px;
     font-size: 24px;
     border: none;
     border-bottom: solid 1px #272727;
     outline: none;
     padding: 10px 0;
+    transition: background-color 0.5s;
 }
 
-button {
+button{
     background-color: #dd203c;
     padding: 20px 25px;
     border-radius: 50%;
@@ -61,49 +61,19 @@ button {
     cursor: pointer;
 }
 
-/* Seu código existente */
-
 body.dark-mode {
-    background-color: #212121;
-    color: #fff;
-}
-body.dark-mode input {
-    background-color: #212121;
-    color: #fff;
-}
-.dark-mode-button.active {
-    background-color: #dd203c;
+    background-color: #272727;
+    color: #ffffff;
 }
 
-.dark-mode-button:not(.active) {
-    background-color: #212121;
+body.dark-mode input{
+    background-color: #272727;
+    color: #ffffff;
+    border-bottom: solid 1px #ffffff;
 }
 
-/* Adicione estilos específicos para o botão de modo escuro aqui se necessário */
-
-.dark-mode-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    background-color: #313131;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    transition: background-color 0.3s ease;
-}
-
-.dark-mode-button i {
-    margin-right: 10px;
-}
-
-.dark-mode-button.active {
-    background-color: #dd203c;
-}
-
-.dark-mode-button:not(.active):hover {
-    background-color: #444;
+#toggle-mode{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
 }
